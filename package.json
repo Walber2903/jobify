@@ -1,0 +1,29 @@
+{
+  "name": "jobify",
+  "version": "1.0.0",
+  "description": "Jobify is a simple job board for sites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Walber2903/jobify.git"
+  },
+  "keywords": [
+    "jobify",
+    "job"
+  ],
+  "author": "Walber Araujo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Walber2903/jobify/issues"
+  },
+  "homepage": "https://github.com/Walber2903/jobify#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "sqlite": "^3.0.3"
+  }
+}
