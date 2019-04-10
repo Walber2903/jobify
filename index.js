@@ -6,6 +6,15 @@ const sqlite = require('sqlite')
 const dbConnection = sqlite.open(path.resolve(__dirname, 'banco.sqlite'), { Promise })
 const port = process.env.PORT || 3000
 
+app.use('/admin', (req, res, next) => {
+    if(req.hostname === 'localhost'){
+        next()
+    }else {
+        res.send('Only permited to administrator in to localhost.')
+    }
+    
+})
+
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')))
